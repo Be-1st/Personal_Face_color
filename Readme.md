@@ -13,3 +13,5 @@
 혹여나 terminal,cmd, Anaconda로 실행 시켜도 문제 없음.
 
 ### frontend(Web page) 
+
+* frontend도 설명 간단하게 적어주길 바람.
