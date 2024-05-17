@@ -15,3 +15,8 @@
 ### frontend(Web page) 
 
 * frontend도 설명 간단하게 적어주길 바람.
+
+
+### Backend(combine)
+
+* 설명
