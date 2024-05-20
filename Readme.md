@@ -11,6 +11,9 @@
 
 위 5개 코드 모두 for_using.ipynb 에서 마지막 _main.py_ 실행 시키면 됨. <br>
 혹여나 terminal,cmd, Anaconda로 실행 시켜도 문제 없음.
+**Option**
+* 사진 경로 변경
+* parameter 결과 경로 변경
 
 ### frontend(Web page) 
 
