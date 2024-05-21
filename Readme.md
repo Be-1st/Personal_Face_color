@@ -14,6 +14,7 @@
 **Option**
 * 사진 경로 변경
 * parameter 결과 경로 변경
+* 로컬에서 실행해보기
 
 ### frontend(Web page) 
 
