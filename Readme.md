@@ -14,7 +14,9 @@
 **Option**
 * 사진 경로 변경
 * parameter 결과 경로 변경
-* 로컬에서 실행해보기
+* 로컬에서 실행해보기 -> 로컬에서도 실행완료..
+* 이제 Flask나 Jango로 마지막 단계만
+* 나는 Flask 맡아서 해보기로함
 
 ### frontend(Web page) 
 
