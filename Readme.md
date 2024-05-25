@@ -23,9 +23,11 @@
 
 **현재 까지의 실행 결과**
 * web.html
+
 ![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/8d56b610-bbc7-42d7-8120-7dcff44664d2)
 
 * result.html
+  
 ![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/1ac7df53-bc78-43da-9e76-6ad787c3a68f)
 
 
