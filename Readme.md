@@ -11,6 +11,7 @@
 5. main.py
 
 ![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/5eb23fe3-020c-49ac-9c85-ea4653c83d85)
+
 **Option**
 * 사진 경로 변경 -- image로
 * main.py가 실행이 안되면 main.py의 경로도 설정해주면 될 수 있음. 경로확인은 getwcd()코드로 확인.
