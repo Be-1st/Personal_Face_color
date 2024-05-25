@@ -2,27 +2,25 @@
 팀원: 박준희, 백태균, 강예원, 이효원
 
 
-### color-insight code - Junparking
+## color-insight code - Junparking
+### src에 있는 코드는아래와 같은 결과를 볼 수 있음.
 1. color_extract.py
 2. detect_face.py
 3. personal_color.py
 4. tone_analysis.py
-5. **main.py**
+5. main.py
 
-위 5개 코드 모두 for_using.ipynb 에서 마지막 _main.py_ 실행 시키면 됨. <br>
-혹여나 terminal,cmd, Anaconda로 실행 시켜도 문제 없음.
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/5eb23fe3-020c-49ac-9c85-ea4653c83d85)
 **Option**
-* 사진 경로 변경
-* parameter 결과 경로 변경
-* 로컬에서 실행해보기 -> 로컬에서도 실행완료..
-* 이제 Flask나 Jango로 마지막 단계만
-* 나는 Flask 맡아서 해보기로함
+* 사진 경로 변경 -- image로
+* main.py가 실행이 안되면 main.py의 경로도 설정해주면 될 수 있음. 경로확인은 getwcd()코드로 확인.
 
-### frontend(Web page) 
+### web에 있는 main.py 를 이용해서 실행하면 webpage에서 실행 가능
 
-* frontend도 설명 간단하게 적어주길 바람.
+* main.py 가 2가지가 있음. web/main.py를 실행시켜야 flask 이용해서 볼 수 있음.
 
 
-### Backend(combine)
 
-* 설명
+## frontend(Web page) 
+### web/template에 있는 것들로 디자인함.  
+
