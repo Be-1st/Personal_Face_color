@@ -1,7 +1,6 @@
 # **1조 프로젝트 color insight_facecolor** <br>
-팀장: 박준희
-팀원: 백태균, 강예원, 이효원
-
+**팀장: 박준희** <br>
+**팀원: 백태균, 강예원, 이효원**
 
 ## color-insight code - Junparking
 ### src에 있는 코드는아래와 같은 결과를 볼 수 있음.
