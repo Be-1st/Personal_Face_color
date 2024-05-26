@@ -32,5 +32,6 @@
 
 
 ## frontend(Web page) 
-### web/template에 있는 것들로 디자인함.  
+### web/template에 있는 것들로 디자인함. 
+수정하면 설명 추가 요망
 
