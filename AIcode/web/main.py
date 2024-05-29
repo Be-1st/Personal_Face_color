@@ -28,5 +28,13 @@ def upload_file():
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
+@app.route('/develop')
+def develop():
+    return render_template('develop.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
