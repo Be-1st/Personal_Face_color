@@ -54,5 +54,9 @@ def uploaded_file(filename):
 def info():
     return render_template('info.html')
 
+@app.route('/develop')
+def develop():
+    return render_template('develop.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
