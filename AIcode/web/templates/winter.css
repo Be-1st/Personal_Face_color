@@ -5,3 +5,27 @@ body {
   justify-content: center;
   background-color: rgb(219, 255, 255);
 }
+.title {
+  margin: 5px;
+  margin-top: 40px;
+}
+
+h1 {
+  margin: 10px;
+}
+.result {
+  margin-top: 30px;
+  background-color: white;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px;
+}
+button {
+  margin-top: 35px;
+  width: 130px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+}
