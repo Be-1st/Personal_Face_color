@@ -19,9 +19,14 @@ def upload_file():
         file = request.files['file']
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
-        result = personal_color.analysis(file_path)
-        img_url = url_for('uploaded_file', filename=file.filename)
-        return render_template('result.html', result=result, img_url=img_url)
+        try:
+            result = personal_color.analysis(file_path)
+            img_url = url_for('uploaded_file', filename=file.filename)
+            return render_template('result.html', result=result, img_url=img_url)
+        except ValueError as e:
+            result = str(e)
+            img_url = url_for('uploaded_file', filename=file.filename)
+            return render_template('result.html', result=result, img_url=img_url)
     return render_template('web.html')
 
 @app.route('/uploads/<filename>')
