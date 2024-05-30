@@ -36,7 +36,10 @@ class DetectFace:
         face_parts = [[] for _ in range(8)]
         
         # detect faces in the grayscale image
-        rect = self.detector(cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY), 1)[0]
+        faces = self.detector(cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY), 1)
+        if len(faces) == 0:
+            raise ValueError("업로드된 사진에서 얼굴을 인식 할 수 없습니다. \n 다른 사진을 업로드 해 주세요.")
+        rect = faces[0]
 
         # determine the facial landmarks for the face region, then
         # convert the landmark (x, y)-coordinates to a NumPy array
@@ -56,8 +59,6 @@ class DetectFace:
         # Cheeks are detected by relative position to the face landmarks
         self.left_cheek = self.img[shape[29][1]:shape[33][1], shape[4][0]:shape[48][0]]
         self.right_cheek = self.img[shape[29][1]:shape[33][1], shape[54][0]:shape[12][0]]
-
-
     # parameter example : self.right_eye
     # return type : image
     def extract_face_part(self, face_part_points):
