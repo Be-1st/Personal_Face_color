@@ -38,7 +38,7 @@ def upload_file():
                 css_file = ''
         except ValueError as e:
             result = str(e)
-            css_file = ''
+            return render_template('error.html', result=result, css_url='error.css')
 
         img_url = url_for('uploaded_file', filename=file.filename)
         css_url = url_for('static', filename=f'css/{css_file}') if css_file else ''
@@ -56,6 +56,10 @@ def info():
 @app.route('/develop')
 def develop():
     return render_template('develop.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
