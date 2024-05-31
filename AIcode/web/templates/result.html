@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ css_url }}" />
     <title>Analysis Result</title>
-</head>
-<body>
-    <h1>Analysis Result</h1>
-    <img src="{{ img_url }}" alt="Uploaded Image" style="max-width: 500px;">
-    <p>{{ result }}</p>
-</body>
+  </head>
+  <body>
+    <h3 class="title">오픈소스SW 1조의 팀프로젝트</h3>
+    <h1
+      style="
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black,
+          0px -1px black;
+      "
+    >
+      🎨 Find your Personal Color 🎨
+    </h1>
+    <div class="result">
+      <h3>당신의 퍼스널컬러는</h3>
+      <img
+        src="{{ img_url }}"
+        alt="Uploaded Image"
+        style="width: 300px; max-height: 400px"
+      />
+      <h2>{{ result }}</h2>
+    </div>
+    <a class="home" href="{{ url_for ('upload_file') }}"
+      ><button>다시 해보기</button></a
+    >
+  </body>
 </html>
