@@ -2,6 +2,8 @@
 **팀장: 박준희** <br>
 **팀원: 백태균, 강예원, 이효원**
 
+* 깃허브 정리 한번 하기!
+
 ## color-insight code - Junparking
 ### src에 있는 코드는아래와 같은 결과를 볼 수 있음.
 1. color_extract.py
