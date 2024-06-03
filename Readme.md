@@ -42,7 +42,8 @@
 - web.html과 web.css를 수정하여 디자인적으로 업그레이드함. 그외 result.html,css를 전부 수정하여 퍼스널컬러 결과별로 다르게 결과 출력 할 수 있게 수정하였음. 
 
 ![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/a1592d18-f0cf-4028-ab71-d1819b2da65b)
-![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/6097ab9d-00c3-472c-818c-a7ffaff441f4)
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/67a29aed-cc23-42ca-ad85-0b58227b0d72)
+
 
 
 - face detect error가 나올 경우 Backend에서는 ValueError처리후, 웹페이지에서는 얼굴 인식 할 수 없다는 메시지와 함께 다른 사진 업로드 요청하는 페이지를 만듬.
