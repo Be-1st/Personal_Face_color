@@ -36,6 +36,22 @@
 ## frontend(Web page) 
 ### web/template에 있는 것들로 디자인함. 
 
+ ![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/e3b52df5-5b41-4521-be08-f950e7dad924)
 
 
+- web.html과 web.css를 수정하여 디자인적으로 업그레이드함. 그외 result.html,css를 전부 수정하여 퍼스널컬러 결과별로 다르게 결과 출력 할 수 있게 수정하였음. 
 
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/a1592d18-f0cf-4028-ab71-d1819b2da65b)
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/6097ab9d-00c3-472c-818c-a7ffaff441f4)
+
+
+- face detect error가 나올 경우 Backend에서는 ValueError처리후, 웹페이지에서는 얼굴 인식 할 수 없다는 메시지와 함께 다른 사진 업로드 요청하는 페이지를 만듬.
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/ce1b32e2-2077-4f92-8a9a-40ad08d1ecee)
+
+2) 퍼스널 컬러에 대한 정보 자료 웹 페이지에 구현
+- 퍼스널 컬러 관련된 기본 정보 조사( 의미, 장점, 컬러의 종류 등)
+- 스타일링을 참고할 수 있는 해당 퍼스널 컬러 대표 연예인 사진 첨부 
+
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/de137071-645e-4ec5-aedc-3ed3e6917c4e)
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/571742ff-c05e-4c23-baaf-e393840ac604)
+![image](https://github.com/Be-1st/Personal_Face_color/assets/141213047/41e505e9-8c40-46fa-a5f2-a571fda7bf06)
