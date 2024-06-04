@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="develop.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/develop.css')}}"
+    />
     <script
       src="https://kit.fontawesome.com/f32763c86a.js"
       crossorigin="anonymous"
@@ -12,10 +15,45 @@
   </head>
   <body>
     <div class="title">
-      <h1>Be-1st조의 개발 보고서</h1>
+      <h1>개발 및 측정 방식이 궁금해요!</h1>
       <a class="home" href="{{ url_for ('upload_file') }}"
         ><i class="fa-solid fa-house"></i
       ></a>
     </div>
+    <div class="body">
+      <div class="text">
+        <div class="text1">🧑‍💻 어떤 프로젝트인가요?</div>
+        <div class="text2">
+          이 프로젝트는 오픈소스 팀프로젝트로 진행했으며, 사람들의 퍼스널컬러를 측정해주는 사이트입니다. 사진을 업로드하면 <strong>봄웜톤, 여름쿨톤, 가을웜톤, 겨울쿨톤</strong> 중 하나를 출력합니다. 만약 사진에서 얼굴을 인식하지 못한다면 <strong>업로드된 사진에서 얼굴을 인식 할 수 없습니다. 다른 사진을 업로드 해 주세요.</strong>이라는 멘트를 출력하며 실패화면으로 넘어갑니다.
+        </div>
+          <img src={{url_for('static', filename='image/설명.png')}}
+          width="100%" />     
+          <div class="text1">🧑‍💻 어떤 방식으로 측정하나요?</div>   
+          <div class="text2">
+            이 프로젝트는 기본적으로 <strong>인공지능</strong>을 사용하여 사진을 분석합니다. 또한, 사용자에게 보이는 웹 페이지의 화면과 사진의 업로드 등을 위해 <strong>프론트엔트, 백엔드</strong> 개발이 사용됩니다.
+          </div>
+          <div class="text3">1. 프론트엔드</div>
+          <div class="text2">먼저 프론트엔드 부분의 경우, 간단한 <strong>HTML, CSS</strong>를 통해 웹페이지를 디자인하고 구현했습니다. 메인 화면에서 아래 부분에 두 개의 버튼이 있는데, 버튼을 누르면 각각 퍼스널컬러에 대한 설명과 개발과 측정 방법을 보여주는 화면으로 넘어가도록 했습니다. 또한, 각 페이지에서 오른쪽 상단에 있는 홈버튼을 누르면 메인 화면으로 돌아갈 수 있도록 했습니다. </div>
+          <div class="images">
+            <img src={{url_for('static', filename='image/spring.png')}} height="200vh" /> 
+            <img src={{url_for('static',filename='image/summer1.png')}} height="200vh" /> 
+            <img src={{url_for('static', filename='image/fall.png')}} height="200vh" /> 
+            <img src={{url_for('static', filename='image/fall1.png')}} height="200vh" />
+            <img src={{url_for('static', filename='image/winter.png')}} height="200vh" />
+            <img src={{url_for('static', filename='image/error.png')}} height="200vh" />
+          </div>
+          <div class="text2">이에 더해, 위 사진들과 같이 <strong>출력화면</strong>에서 나오는 결과값에 따라 배경색을 다르게 만들기 위해서 <strong>spring.css, summer.css, fall.css, winter.css</strong> 파일을 따로 만들어 연결했으며, 사진을 인식하지 못하는 경우에 띄울 화면도 따로 만들기 위해 <strong>error.html, error.css</strong>파일을 만들어 연결했습니다.</div>
+
+          <div class="text3">2. 백엔드</div>
+          <div class="text2">원래는 스프링을 이용할 줄 아는 팀원이 있어, 스프링을 사용하려고 했으나 파이썬을 사용하는 인공지능의 특성상 장고를 사용하는 것이 편하다고 여겨 장고를 공부해보았습니다. 하지만 결국에는 <strong>플라스크 Flask</strong>를 사용하여 웹 페이지와 인공지능을 연결하기로 하였습니다.</div>
+          <div class="text2">이 프로젝트에서 백엔드가 하는 일은 웹페이지에서 업로드된 사진 파일을 인공지능으로 넘기고, 인공지능에서 나온 퍼스널컬러 결과를 다시 웹페이지로 출력하여 사용자가 확인할 수 있도록 하는 일입니다.</div>
+          <div class="text3">3. 인공지능</div>
+          <div class="text2">마지막으로 이번 프로젝트의 가장 중요한 역할을 했던 AI입니다. AI에서는 <strong>Kmeans</strong>라는 인공지능 모델을 사용하였습니다.</div>
+          <div class="text2">해당 인공지능 모델을 통해 사진 속 얼굴에서 <strong>눈썹, 눈동자, 뺨</strong>에서의 픽셀을 군집화하여 대표색을 추출해낸 뒤 각 계졀별 기준값과 비교해서 가장 가까운 계절의 톤을 퍼스널컬러로 인식하는 원리를 사용했습니다.</div>
+          <div class="text2">아래 사진들은 각각 실험한 이미지와 해당 이미지를 통해 실행해본 결과입니다.</div>
+          <div class="images">
+            <img src={{url_for('static', filename='image/실험이미지.png')}} width="300vw" /> 
+            <img src={{url_for('static',filename='image/출력결과.png')}} width="500vw" /> 
+          </div>
   </body>
 </html>
